@@ -1,0 +1,84 @@
+@charset "UTF-8";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+body header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 0;
+}
+body header .logo {
+  display: flex;
+  align-items: center;
+  flex: 2 1 400px;
+}
+body header .logo img {
+  width: 20%;
+}
+body header .logo h1 {
+  font-size: 2.5rem;
+}
+body header nav {
+  flex: 5 1 500px;
+}
+body header ul {
+  display: flex;
+  justify-content: space-around;
+}
+body header ul li {
+  list-style-type: none;
+}
+body header ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+  padding-bottom: 0.5rem;
+}
+body header ul li a:hover {
+  color: rgb(40, 246, 246);
+  border-bottom: 2px solid rgb(40, 246, 246);
+}
+body main section.background-img {
+  position: relative;
+  background-image: url(../images/日本櫻花.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  transition: all 0.75s ease;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.background-img div.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body main section.background-img h3 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+}/*# sourceMappingURL=style.css.map */

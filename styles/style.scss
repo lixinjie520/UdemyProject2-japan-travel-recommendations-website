@@ -1,0 +1,86 @@
+$themeColor: rgb(40, 246, 246);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 0;
+    .logo {
+      display: flex;
+      align-items: center;
+      flex: 2 1 400px;
+      img {
+        width: 20%;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    nav {
+      flex: 5 1 500px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style-type: none;
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 1.5rem;
+          transition: all 0.2s ease;
+          padding-bottom: 0.5rem;
+          &:hover {
+            color: $themeColor;
+            border-bottom: 2px solid $themeColor;
+          }
+        }
+      }
+    }
+  }
+  main {
+    section.background-img {
+      position: relative;
+      background-image: url(../images/日本櫻花.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 70vh;
+      transition: all 0.75s ease;
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div.filter {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        min-height: 70vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      h3 {
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
