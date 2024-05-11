@@ -41,7 +41,7 @@ body header .logo img {
   width: 20%;
 }
 body header .logo h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 body header nav {
   flex: 5 1 500px;
@@ -129,4 +129,44 @@ body main section.empty-container {
 body main section.empty-container h3 {
   font-size: 2rem;
   color: white;
+}
+body main section.google-map {
+  padding: 2rem 0;
+  background-color: #fff;
+  text-align: center;
+}
+body main section.google-map h3 {
+  font-size: 2rem;
+}
+body main section.google-map p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+body main section.google-map iframe {
+  width: 100%;
+  height: 50vh;
+  border: none;
+}
+
+@media screen and (max-width: 700px) {
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 0.5rem 0.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 0.5rem 0.5rem;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
+  header section.logo h1 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
